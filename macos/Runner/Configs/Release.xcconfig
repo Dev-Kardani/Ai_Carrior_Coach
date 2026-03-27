@@ -1,0 +1,4 @@
+#include "../../Flutter/Flutter-Release.xcconfig"
+#include "Warnings.xcconfig"
+ARCHS = arm64 x86_64
+VALID_ARCHS = arm64 x86_64

@@ -1,0 +1,64 @@
+name: ai_career_coach
+description: A 100% free AI-powered career assistant for resume analysis and career guidance.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Environment variables
+  flutter_dotenv: ^5.1.0
+  
+  # Supabase SDK
+  supabase_flutter: ^2.5.0
+  
+  # Google Gemini AI
+  google_generative_ai: ^0.4.7
+  
+  # PDF handling
+  syncfusion_flutter_pdf: ^27.1.58
+  file_picker: ^8.0.0
+  
+  # Local storage
+  shared_preferences: ^2.2.2
+  
+  # State management
+  provider: ^6.1.1
+  
+  # UI enhancements
+  google_fonts: ^6.1.0
+  flutter_animate: ^4.5.0
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.3.3
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+
+flutter_native_splash:
+  color: "#0F172A"
+  android_12:
+    color: "#0F172A"
+  fullscreen: true
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - .env
+    - assets/images/
